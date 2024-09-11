@@ -1,0 +1,78 @@
+/* Base Styles */
+.navbar {
+  position: sticky;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--theme);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-heading {
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.navbar-link {
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.navbar-link:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/* Mobile First Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-link {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-heading {
+    font-size: 1.3rem;
+  }
+
+  .navbar-link {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  .navbar {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .navbar-heading {
+    font-size: 1.2rem;
+  }
+
+  .navbar-link {
+    font-size: 1rem;
+  }
+}
